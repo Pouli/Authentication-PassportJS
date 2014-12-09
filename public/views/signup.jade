@@ -1,0 +1,18 @@
+extends layout
+block content
+  h1 Signup Form
+  h3 Fill the form please to signup
+  .col-md-8.col-md-offset-2
+    if message.length > 0
+      .alert.alert-danger
+        p #{message}
+    form(action='/signup' method='post')
+        .form-group.row.col-md-12
+          label(for="Email") Email
+          input(type="email", name="email").form-control
+        .form-group.row.col-md-8.col-md-offset-2
+          label(for="Password") Password
+          input(type="password", name="password").form-control
+          br
+          button(type="submit").btn.btn-primary Submit
+          a(href="/").btn.btn-default Cancel

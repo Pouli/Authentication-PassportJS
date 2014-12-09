@@ -1,0 +1,9 @@
+extends layout
+block content
+  h1 Authentication App
+  p Choose the way you want to login
+  p
+    a.btn.btn-default(href='/login') Local Login
+    a.btn.btn-primary(href='/auth/facebook') Facebook
+  p If you don't have an account
+    a(href='/signup')  Signup Now

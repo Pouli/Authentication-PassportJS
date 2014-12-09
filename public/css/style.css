@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2980b9;
+}
+table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+td {
+    height: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+p {
+  word-wrap: break-word;
+}
+h2 {
+  text-decoration: underline;
+}

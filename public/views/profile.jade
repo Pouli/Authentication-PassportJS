@@ -1,0 +1,15 @@
+extends layout
+block content
+      h1 Profile
+      br
+      h2 Local information
+      p<strong>id:</strong> #{user._id}
+      p<strong>email:</strong> #{user.local.email}
+      br
+      h2 Facebook information
+      p<strong>id:</strong>#{user.facebook.id}
+      p<strong>token:</strong> #{user.facebook.token}
+      p<strong>email:</strong> #{user.facebook.email}
+      p<strong>first name:</strong> #{user.facebook.firstName}
+      p<strong>family name:</strong> #{user.facebook.familyName}
+      a.btn.btn-warning(href='/logout') Logout
